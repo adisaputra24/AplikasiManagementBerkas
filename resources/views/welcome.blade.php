@@ -411,10 +411,10 @@
             @auth
             <a href="{{ url('/dashboard/admin') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
             @else
-            <a href="{{ secure('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+            <a href="{{ secure_url('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
             @if (Route::has('register'))
-            <a href="{{ secure('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+            <a href="{{ secure_url('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
             @endif
             @endauth
         </div>

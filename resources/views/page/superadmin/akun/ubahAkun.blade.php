@@ -10,7 +10,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item">
-                        <a href="{{ secure('home') }}">Beranda</a>
+                        <a href="{{ secure_url('home') }}">Beranda</a>
                     </li>
                     <li class="breadcrumb-item active">Ubah Akun</li>
                 </ol>

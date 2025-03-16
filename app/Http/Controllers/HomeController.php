@@ -68,7 +68,7 @@ class HomeController extends Controller
 
             // Update data user
             $usr->update($data);
-            return redirect()->secure('profile')->with('status', 'Perubahan telah tersimpan');
+            return redirect()->secure_url('profile')->with('status', 'Perubahan telah tersimpan');
         } elseif ($request->input('type') == 'change_password') {
             $this->validate($request, [
                 'password' => 'min:8|confirmed|required',
@@ -77,7 +77,7 @@ class HomeController extends Controller
             $usr->update([
                 'password' => Hash::make($request->password)
             ]);
-            return redirect()->secure('profile')->with('status', 'Perubahan telah tersimpan');
+            return redirect()->secure_url('profile')->with('status', 'Perubahan telah tersimpan');
         }
     }
 }

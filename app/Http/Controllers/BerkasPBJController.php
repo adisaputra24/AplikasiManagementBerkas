@@ -313,7 +313,7 @@ class BerkasPBJController extends Controller
 
                 DB::commit();
 
-                return redirect()->secure('berkas_pbj.index')
+                return redirect()->secure_url('berkas_pbj.index')
                     ->with('status', 'Berkas PBJ berhasil ditambahkan');
             } catch (\Exception $e) {
                 DB::rollBack();
@@ -555,7 +555,7 @@ class BerkasPBJController extends Controller
 
                 DB::commit();
 
-                return redirect()->secure('berkas_pbj.index')
+                return redirect()->secure_url('berkas_pbj.index')
                     ->with('status', 'Berkas PBJ berhasil diperbarui');
             } catch (\Exception $e) {
                 DB::rollBack();

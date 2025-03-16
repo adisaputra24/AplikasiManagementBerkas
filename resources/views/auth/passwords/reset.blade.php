@@ -11,7 +11,7 @@ Password') @section('content')
             <p class="login-box-msg">Anda hanya selangkah lagi dari kata sandi baru Anda,
                 pulihkan kata sandi Anda sekarang.</p>
 
-            <form action="{{ secure('password.update') }}" method="post">
+            <form action="{{ secure_url('password.update') }}" method="post">
                 @csrf
                 <input type="hidden" name="token" value="{{ $token }}">
                 <div class="input-group mb-3">
@@ -81,7 +81,7 @@ Password') @section('content')
 
             <p class="mt-3 mb-1">
                 Password sudah terubah?
-                <a href="{{ secure('login') }}">Login</a>
+                <a href="{{ secure_url('login') }}">Login</a>
             </p>
         </div>
         <!-- /.login-card-body -->

@@ -16,7 +16,7 @@ Password') @section('content')
             <p class="login-box-msg">Anda lupa kata sandi Anda? Di sini Anda dapat dengan
                 mudah mengambil kata sandi baru.</p>
 
-            <form action="{{ secure('password.email') }}" method="post">
+            <form action="{{ secure_url('password.email') }}" method="post">
                 @csrf
                 <div class="input-group mb-3">
                     <input
@@ -50,11 +50,11 @@ Password') @section('content')
 
             <p class="mt-3 mb-1">
                 Sudah punya akun?
-                <a href="{{ secure('login') }}">Login</a>
+                <a href="{{ secure_url('login') }}">Login</a>
             </p>
             <p class="mb-0">
                 Baru pertama kali?
-                <a href="{{ secure('register') }}" class="text-center">Register</a>
+                <a href="{{ secure_url('register') }}" class="text-center">Register</a>
             </p>
         </div>
         <!-- /.login-card-body -->
