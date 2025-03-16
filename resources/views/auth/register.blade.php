@@ -9,7 +9,7 @@
         <div class="card-body register-card-body">
             <p class="login-box-msg">Registrasi Akun Baru</p>
 
-            <form action="{{ url('register') }}" method="post">
+            <form action="{{ route('register') }}" method="post">
                 @csrf
                 <div class="input-group mb-3">
                     <input
@@ -101,7 +101,7 @@
                  I agree to the <a href="#">terms</a>
                 </label>
               </div> --}}
-                        Sudah punya akun? <a href="{{ url('login') }}" class="text-center">Login</a>
+                        Sudah punya akun? <a href="{{ route('login') }}" class="text-center">Login</a>
                     </div>
                     <!-- /.col -->
                     <div class="col-4">

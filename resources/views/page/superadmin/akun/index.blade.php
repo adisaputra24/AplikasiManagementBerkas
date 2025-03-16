@@ -14,7 +14,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item">
-                        <a href="{{ url('home') }}">Beranda</a>
+                        <a href="{{ route('home') }}">Beranda</a>
                     </li>
                     <li class="breadcrumb-item active">Akun</li>
                 </ol>
@@ -66,7 +66,7 @@
             "serverSide": true,
             "processing": true,
             "ajax": {
-                "url": "{{ url('akun.dataTable') }}",
+                "url": "{{ route('akun.dataTable') }}",
                 "dataType": "json",
                 "type": "POST",
                 "data": {
