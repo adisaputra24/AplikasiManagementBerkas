@@ -9,9 +9,9 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte3/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_secure_asset('vendor/adminlte3/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ secure_asset('vendor/adminlte3/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_secure_asset('vendor/adminlte3/css/adminlte.min.css') }}">
     @yield('script_head')
 </head>
 
@@ -37,11 +37,11 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="{{ asset('vendor/adminlte3/plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte3/plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap 4 -->
-    <script src="{{ asset('vendor/adminlte3/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte3/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="{{ asset('vendor/adminlte3/js/adminlte.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte3/js/adminlte.min.js') }}"></script>
     <!-- AdminLTE for demo purposes -->
     {{-- <script src="../../dist/js/demo.js"></script> --}}
 

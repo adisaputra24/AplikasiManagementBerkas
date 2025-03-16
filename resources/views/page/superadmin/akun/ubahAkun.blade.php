@@ -69,7 +69,7 @@
                                     @if ($usr->user_image)
                                     <img class="elevation-3" id="prevImg" src="{{ $usr->user_image }}" width="150px" />
                                     @else
-                                    <img class="elevation-3" id="prevImg" src="{{ asset('vendor/adminlte3/img/user2-160x160.jpg') }}" width="150px" />
+                                    <img class="elevation-3" id="prevImg" src="{{ secure_asset('vendor/adminlte3/img/user2-160x160.jpg') }}" width="150px" />
                                     @endif
                                 </div>
                                 <div class="col-md-8">

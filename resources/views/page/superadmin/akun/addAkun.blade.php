@@ -66,7 +66,7 @@
                             <label for="inputFoto">Foto Profil</label>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img class="elevation-3" id="prevImg" src="{{ asset('vendor/adminlte3/img/user2-160x160.jpg') }}" width="150px" />
+                                    <img class="elevation-3" id="prevImg" src="{{ secure_asset('vendor/adminlte3/img/user2-160x160.jpg') }}" width="150px" />
                                 </div>
                                 <div class="col-md-8">
                                     <input type="file" id="inputFoto" name="user_image" accept="image/*" class="form-control @error('user_image') is-invalid @enderror" placeholder="Upload foto profil">

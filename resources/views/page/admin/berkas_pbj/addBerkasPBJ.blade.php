@@ -45,7 +45,7 @@
     </div>
     @endif
 
-    <form method="post" action="{{ route('berkas_pbj.add') }}" id="form-tambah-berkas">
+    <form method="post" action="{{ secure_url('berkas_pbj.add') }}" id="form-tambah-berkas">
         @csrf
         <div class="row">
             <div class="col d-flex justify-content-center">
