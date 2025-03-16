@@ -62,8 +62,8 @@ class AkunController extends Controller
         $data_val = array();
         if (!empty($akun_data)) {
             foreach ($akun_data as $akun_val) {
-                $url = secure_url('akun.edit', ['id' => $akun_val->id]);
-                $urlHapus = secure_url('akun.delete', $akun_val->id);
+                $url = url('akun.edit', ['id' => $akun_val->id]);
+                $urlHapus = url('akun.delete', $akun_val->id);
                 if ($akun_val->user_image) {
                     $img = $akun_val->user_image;
                 } else {

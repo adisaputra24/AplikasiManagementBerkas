@@ -16,7 +16,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item">
-                        <a href="{{ secure_url('home') }}">Beranda</a>
+                        <a href="{{ url('home') }}">Beranda</a>
                     </li>
                     <li class="breadcrumb-item active">Tambah Berkas PBJ</li>
                 </ol>
@@ -45,7 +45,7 @@
     </div>
     @endif
 
-    <form method="post" action="{{ secure_url('berkas_pbj.add') }}" id="form-tambah-berkas">
+    <form method="post" action="{{ url('berkas_pbj.add') }}" id="form-tambah-berkas">
         @csrf
         <div class="row">
             <div class="col d-flex justify-content-center">
@@ -429,7 +429,7 @@
         </div>
         <div class="row">
             <div class="col-12 mb-4">
-                <a href="{{ secure_url('berkas_pbj.index') }}" class="btn btn-secondary">Cancel</a>
+                <a href="{{ url('berkas_pbj.index') }}" class="btn btn-secondary">Cancel</a>
                 <button type="submit" class="btn btn-success float-right">Tambah Berkas PBJ</button>
             </div>
         </div>
