@@ -9,7 +9,7 @@
         <div class="card-body register-card-body">
             <p class="login-box-msg">Registrasi Akun Baru</p>
 
-            <form action="{{ route('register') }}" method="post">
+            <form action="{{ secure_url('register') }}" method="post">
                 @csrf
                 <div class="input-group mb-3">
                     <input
@@ -101,7 +101,7 @@
                  I agree to the <a href="#">terms</a>
                 </label>
               </div> --}}
-               Sudah punya akun? <a href="{{ route('login') }}" class="text-center">Login</a>
+                        Sudah punya akun? <a href="{{ route('login') }}" class="text-center">Login</a>
                     </div>
                     <!-- /.col -->
                     <div class="col-4">
@@ -121,12 +121,12 @@
                     <i class="fab fa-google-plus mr-2"></i>
                     Sign up using Google+
                 </a> --}}
-            </div>
-
-
         </div>
-        <!-- /.form-box -->
+
+
     </div>
-    <!-- /.card -->
+    <!-- /.form-box -->
+</div>
+<!-- /.card -->
 </div>
 @endsection

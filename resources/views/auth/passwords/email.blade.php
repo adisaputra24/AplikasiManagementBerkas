@@ -16,7 +16,7 @@ Password') @section('content')
             <p class="login-box-msg">Anda lupa kata sandi Anda? Di sini Anda dapat dengan
                 mudah mengambil kata sandi baru.</p>
 
-            <form action="{{ route('password.email') }}" method="post">
+            <form action="{{ secure_url('password.email') }}" method="post">
                 @csrf
                 <div class="input-group mb-3">
                     <input

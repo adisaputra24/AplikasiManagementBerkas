@@ -9,7 +9,7 @@
         <div class="card-body login-card-body">
             <p class="login-box-msg">Masuk untuk memulai sesi Anda</p>
 
-            <form action="{{ route('login') }}" method="post">
+            <form action="{{ secure_url('login') }}" method="post">
                 @csrf
                 <div class="input-group mb-3">
                     <input

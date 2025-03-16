@@ -97,7 +97,7 @@ Profil') @section('content')
                             <div class="tab-pane" id="updateData">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <form action="{{ route('profile.update',['type'=>'change_profile']) }}" method="post" enctype="multipart/form-data">
+                                        <form action="{{ secure_url('profile.update',['type'=>'change_profile']) }}" method="post" enctype="multipart/form-data">
                                             @csrf
                                             <div class="card card-primary">
                                                 <div class="card-header">
@@ -194,7 +194,7 @@ Profil') @section('content')
                                         </form>
                                     </div>
                                     <div class="col-md-6">
-                                        <form action="{{ route('profile.update',['type'=>'change_password']) }}" method="post">
+                                        <form action="{{ secure_url('profile.update',['type'=>'change_password']) }}" method="post">
                                             @csrf
                                             <div class="card card-secondary">
                                                 <div class="card-header">
