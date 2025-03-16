@@ -10,7 +10,7 @@ Profil') @section('content')
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item">
-                        <a href="{{secure_url('home')}}">Beranda</a>
+                        <a href="{{secure('home')}}">Beranda</a>
                     </li>
                     <li class="breadcrumb-item active">Profile</li>
                 </ol>
@@ -97,7 +97,7 @@ Profil') @section('content')
                             <div class="tab-pane" id="updateData">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <form action="{{ secure_url('profile.update',['type'=>'change_profile']) }}" method="post" enctype="multipart/form-data">
+                                        <form action="{{ secure('profile.update',['type'=>'change_profile']) }}" method="post" enctype="multipart/form-data">
                                             @csrf
                                             <div class="card card-primary">
                                                 <div class="card-header">
@@ -194,7 +194,7 @@ Profil') @section('content')
                                         </form>
                                     </div>
                                     <div class="col-md-6">
-                                        <form action="{{ secure_url('profile.update',['type'=>'change_password']) }}" method="post">
+                                        <form action="{{ secure('profile.update',['type'=>'change_password']) }}" method="post">
                                             @csrf
                                             <div class="card card-secondary">
                                                 <div class="card-header">

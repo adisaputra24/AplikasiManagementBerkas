@@ -44,11 +44,11 @@
 
                 <!-- Menu Footer-->
                 <li class="user-footer">
-                    <a href="{{ secure_url('profile') }}" class="btn btn-default btn-flat">Profile</a>
-                    <a class="btn btn-default btn-flat float-right" href="{{ secure_url('logout') }}" onclick="event.preventDefault();
+                    <a href="{{ secure('profile') }}" class="btn btn-default btn-flat">Profile</a>
+                    <a class="btn btn-default btn-flat float-right" href="{{ secure('logout') }}" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
 
-                        <form id="logout-form" action="{{ secure_url('logout') }}" method="POST" style="display: none;">
+                        <form id="logout-form" action="{{ secure('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
                         <i class="ni ni-user-run"></i>

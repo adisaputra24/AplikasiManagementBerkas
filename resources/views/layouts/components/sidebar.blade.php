@@ -1,7 +1,7 @@
 @php
 $linksUser = [
 [
-"href" => secure_url('home'),
+"href" => secure('home'),
 "text" => "Dasboard",
 "icon" => "fas fa-home",
 "is_multi" => false
@@ -10,7 +10,7 @@ $linksUser = [
 "text" => "Berkas & Tagihan PBJ",
 "icon" => "fa fa-file-alt",
 "is_multi" => false,
-"href" => secure_url('berkas_pbj.index')
+"href" => secure('berkas_pbj.index')
 ],
 ];
 
@@ -23,12 +23,12 @@ $linksAdmin = [
 [
 "section_text" => "Data Akun",
 "section_icon" => "far fa-circle",
-"section_href" => secure_url('akun.index')
+"section_href" => secure('akun.index')
 ],
 [
 "section_text" => "Tambah Akun",
 "section_icon" => "far fa-circle",
-"section_href" => secure_url('akun.add')
+"section_href" => secure('akun.add')
 ]
 ]
 ],
