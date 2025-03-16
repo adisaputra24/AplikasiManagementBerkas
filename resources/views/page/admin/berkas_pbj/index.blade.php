@@ -43,24 +43,26 @@
             </div>
         </div>
         <div class="card-body p-0" style="margin: 20px">
-            <table id="previewBerkasPBJ" class="table table-striped table-bordered display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>Nomor Kontrak</th>
-                        <th>Nama Kontrak</th>
-                        <th>Tanggal Kontrak</th>
-                        <th>Jangka Waktu Kontrak</th>
-                        <th>Nilai Kontrak</th>
-                        <th>Nama Vendor</th>
-                        <th>BAPP</th>
-                        <th>BASTP</th>
-                        <th>PHO</th>
-                        <th>FHO</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+            <div class="table-responsive">
+                <table id="previewBerkasPBJ" class="table table-striped table-bordered display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Nomor Kontrak</th>
+                            <th>Nama Kontrak</th>
+                            <th>Tanggal Kontrak</th>
+                            <th>Jangka Waktu Kontrak</th>
+                            <th>Nilai Kontrak</th>
+                            <th>Nama Vendor</th>
+                            <th>BAPP</th>
+                            <th>BASTP</th>
+                            <th>PHO</th>
+                            <th>FHO</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
     </div>
 </section>
