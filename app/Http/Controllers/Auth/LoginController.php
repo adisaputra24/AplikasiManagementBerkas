@@ -68,9 +68,9 @@ class LoginController extends Controller
         // dd($role);
         // Redirect berdasarkan peran pengguna
         if ($role == '2') {
-            return redirect()->route('home');
+            return redirect()->secure_url('home');
         } elseif ($role == '1') {
-            return redirect()->route('superadmin.dashboard');
+            return redirect()->secure_url('superadmin.dashboard');
         }
     }
 }

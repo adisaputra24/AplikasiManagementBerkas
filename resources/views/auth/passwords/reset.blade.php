@@ -81,7 +81,7 @@ Password') @section('content')
 
             <p class="mt-3 mb-1">
                 Password sudah terubah?
-                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ secure_url('login') }}">Login</a>
             </p>
         </div>
         <!-- /.login-card-body -->

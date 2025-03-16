@@ -101,7 +101,7 @@
                  I agree to the <a href="#">terms</a>
                 </label>
               </div> --}}
-                        Sudah punya akun? <a href="{{ route('login') }}" class="text-center">Login</a>
+                        Sudah punya akun? <a href="{{ secure_url('login') }}" class="text-center">Login</a>
                     </div>
                     <!-- /.col -->
                     <div class="col-4">

@@ -50,11 +50,11 @@ Password') @section('content')
 
             <p class="mt-3 mb-1">
                 Sudah punya akun?
-                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ secure_url('login') }}">Login</a>
             </p>
             <p class="mb-0">
                 Baru pertama kali?
-                <a href="{{ route('register') }}" class="text-center">Register</a>
+                <a href="{{ secure_url('register') }}" class="text-center">Register</a>
             </p>
         </div>
         <!-- /.login-card-body -->

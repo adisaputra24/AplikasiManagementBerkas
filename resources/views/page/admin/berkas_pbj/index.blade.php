@@ -15,7 +15,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item">
-                        <a href="{{ route('home') }}">Beranda</a>
+                        <a href="{{ secure_url('home') }}">Beranda</a>
                     </li>
                     <li class="breadcrumb-item active">Berkas & Tagihan PBJ</li>
                 </ol>
@@ -37,7 +37,7 @@
                 </button>
             </div>
             <div>
-                <a href="{{ route('berkas_pbj.add') }}" class="btn btn-primary">
+                <a href="{{ secure_url('berkas_pbj.add') }}" class="btn btn-primary">
                     <i class="fas fa-plus"></i> Tambah Berkas & Tagihan PBJ
                 </a>
             </div>
@@ -326,7 +326,7 @@
             "serverSide": true,
             "processing": true,
             "ajax": {
-                "url": "{{ route('berkas_pbj.dataTable') }}",
+                "url": "{{ secure_url('berkas_pbj.dataTable') }}",
                 "dataType": "json",
                 "type": "POST",
                 "data": {
@@ -487,7 +487,7 @@
 
     function showBappDetails(nomorKontrak) {
         $.ajax({
-            url: "{{ route('berkas_pbj.getBappDetails') }}",
+            url: "{{ secure_url('berkas_pbj.getBappDetails') }}",
             type: 'POST',
             data: {
                 nomor_kontrak: nomorKontrak,
@@ -546,7 +546,7 @@
 
     function showBastpDetails(nomorKontrak) {
         $.ajax({
-            url: "{{ route('berkas_pbj.getBastpDetails') }}",
+            url: "{{ secure_url('berkas_pbj.getBastpDetails') }}",
             type: 'POST',
             data: {
                 nomor_kontrak: nomorKontrak,
@@ -606,7 +606,7 @@
 
     function showPhoDetails(nomorKontrak) {
         $.ajax({
-            url: "{{ route('berkas_pbj.getPhoDetails') }}",
+            url: "{{ secure_url('berkas_pbj.getPhoDetails') }}",
             type: 'POST',
             data: {
                 nomor_kontrak: nomorKontrak,
@@ -651,7 +651,7 @@
 
     function showFhoDetails(nomorKontrak) {
         $.ajax({
-            url: "{{ route('berkas_pbj.getFhoDetails') }}",
+            url: "{{ secure_url('berkas_pbj.getFhoDetails') }}",
             type: 'POST',
             data: {
                 nomor_kontrak: nomorKontrak,
@@ -713,7 +713,7 @@
 
     function deleteData(nomorKontrak) {
         $.ajax({
-            url: "{{ route('berkas_pbj.delete') }}",
+            url: "{{ secure_url('berkas_pbj.delete') }}",
             type: 'DELETE',
             data: {
                 nomor_kontrak: nomorKontrak,
@@ -746,7 +746,7 @@
     //     // Alternative AJAX approach:
 
     //     $.ajax({
-    //         url: "{{ route('berkas_pbj.update') }}",
+    //         url: "{{ secure_url('berkas_pbj.update') }}",
     //         type: 'POST',
     //         data: {
     //             nomor_kontrak: nomorKontrak,
@@ -755,7 +755,7 @@
     //         success: function(response) {
     //             if (response.success) {
     //                 // Either redirect to edit page
-    //                 window.location.href = "{{ route('berkas_pbj.update', ['nomor_kontrak' => ':nomor_kontrak']) }}".replace(':nomor_kontrak', nomorKontrak);
+    //                 window.location.href = "{{ secure_url('berkas_pbj.update', ['nomor_kontrak' => ':nomor_kontrak']) }}".replace(':nomor_kontrak', nomorKontrak);
 
     //                 // Or open a modal with edit form (more complex implementation)
     //                 // showEditModal(response.data);
@@ -777,7 +777,7 @@
         // Create a hidden form
         var form = document.createElement('form');
         form.method = 'GET';
-        form.action = "{{ route('berkas_pbj.update') }}";
+        form.action = "{{ secure_url('berkas_pbj.update') }}";
         form.style.display = 'none';
 
         // Create input for the contract number

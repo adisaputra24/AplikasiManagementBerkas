@@ -62,8 +62,8 @@ class AkunController extends Controller
         $data_val = array();
         if (!empty($akun_data)) {
             foreach ($akun_data as $akun_val) {
-                $url = route('akun.edit', ['id' => $akun_val->id]);
-                $urlHapus = route('akun.delete', $akun_val->id);
+                $url = secure_url('akun.edit', ['id' => $akun_val->id]);
+                $urlHapus = secure_url('akun.delete', $akun_val->id);
                 if ($akun_val->user_image) {
                     $img = $akun_val->user_image;
                 } else {
@@ -111,7 +111,7 @@ class AkunController extends Controller
                 'user_image' => $img,
                 'role' => '2',
             ]);
-            return redirect()->route('akun.add')->with('status', 'Data telah tersimpan di database');
+            return redirect()->secure_url('akun.add')->with('status', 'Data telah tersimpan di database');
         }
         return view('page.superadmin.akun.addAkun');
     }
@@ -144,7 +144,7 @@ class AkunController extends Controller
                 'password' => Hash::make($request->password),
                 'user_image' => $img
             ]);
-            return redirect()->route('akun.edit', ['id' => $usr->id])->with('status', 'Data telah tersimpan di database');
+            return redirect()->secure_url('akun.edit', ['id' => $usr->id])->with('status', 'Data telah tersimpan di database');
         }
         return view('page.superadmin.akun.ubahAkun', [
             'usr' => $usr
